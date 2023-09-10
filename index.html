@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+
+    <section class="headings">
+      <img id="circle-pattern" src="./images/pattern-circles.svg" alt="circle pattern">
+      <h1> Simple, traffic-based pricing </h1>
+      <p> Sign-up for our 30-day trial. No credit card required. </p>
+    </section>
+
+    <section class="container">
+      <div id="pricing">
+        <div id="price-dts">
+          <h1>100k Pageviews</h1>
+          <h1> <em id="price-amt">$ 0.00 </em> <em id="month-year">  / month </em></h1>
+        </div>
+
+        <div id="slider">
+          <input id="input" type="range" min="0" max="32" value="0">
+          <div class="progress"></div> 
+        </div>
+        
+        <div id="planDuration">
+          <p> Monthly Billing </p>
+          <div id="changeBtn">
+            <div id="indicator"></div>
+          </div>
+          <p> Yearly Billing <span id="discount"> 25% discount </span> </p>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <section id="perks">
+          <div>
+            <img src="./images/icon-check.svg" alt="check">
+            <p>Unlimited websites</p>
+          </div>
+          <div>
+            <img src="./images/icon-check.svg" alt="check">
+            <p>  100% data ownership </p>
+          </div>
+          <div>
+            <img src="./images/icon-check.svg" alt="check">
+            <p> Email reports </p>
+          </div>
+        </section>
+
+        <button id="btn"> Start my trial </button>
+    </section>
+
+  </div>
+
+ 
+  
+
+  
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

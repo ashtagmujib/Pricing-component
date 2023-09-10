@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding:0;
+}
+
+body {
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+}
+
+.headings {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    text-align: center;
+    position: relative;
+}
+.headings h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+
+    color: hsl(227, 35%, 25%);
+}
+.headings p {
+    font-size: 15px;
+    position: relative;
+}
+
+#circle-pattern {
+    position: absolute;
+    top: -50px;
+    left: 119px;
+}
+
+@media (max-width:375px) {
+    
+    body {
+        width: 375px;
+    }
+
+    .headings h1 {
+        font-size: 23px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .headings p {
+        font-size: 17px;
+        width: 375px;
+        padding: 0 80px;
+    }
+
+    #circle-pattern {
+        position: absolute;
+        top: -40px;
+        left: 118px;
+    }
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.04);
+
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+#pricing {
+    border-bottom: 1px solid hsl(223, 50%, 87%);
+
+}
+
+#price-dts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:30px;
+    padding: 50px 40px;
+}
+
+#price-dts h1:first-of-type {
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(225, 20%, 60%) ;
+}
+
+#price-dts h1:last-child {
+    margin-top: -15px;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: hsl(225, 20%, 60%) ;
+}
+
+#price-amt {
+    font-size: 35px;
+    color: hsl(227, 35%, 25%);
+}
+
+#month-year {
+    font-style: normal;
+}
+
+#slider {
+    padding:0 40px;
+}
+
+#slider .progress {
+    width: 0;
+    height: 5px;
+    background-color: hsl(174, 77%, 80%);
+    border-radius: 5px;
+    margin: -9px 0 0 1px ;
+    z-index: 1;
+    position: relative;
+}
+
+#slider input {
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: hsl(224, 65%, 95%);
+    cursor: pointer;
+    position: relative;
+}
+
+
+#slider input::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url(./images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(174, 86%, 45%);
+    box-shadow: 0 3px 10px 3px hsl(174, 77%, 80%);
+    z-index: 2;
+}
+
+
+#planDuration {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#planDuration p {
+    font-size: 10px;
+}
+
+#discount {
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    padding: 3px 8px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+#changeBtn {
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    background: hsl(223, 50%, 87%);
+
+    margin: -3px 10px 0 10px;
+}
+
+#changeBtn:hover {
+    background-color:hsl(174, 86%, 45%) ;
+}
+
+#changeBtn #indicator {
+    width: 15px;
+    height: 15px;
+    margin: 2px 0 0 2px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+#changeBtn #indicator.active {
+    margin: 2px 0 0 20px;
+}
+
+.footer {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#perks div {
+    display: flex;
+}
+
+#perks div:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+#perks div p {
+    color: hsl(225, 20%, 60%);
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 30px;
+
+    margin-top: 7px;
+    background-color: hsl(227, 35%, 25%);
+    color: hsl(225, 20%, 60%);
+}
+
+#btn:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    transition: 0.1s ease-in-out;
+}
+
+@media (max-width:375px) {
+    
+    .container {
+        width: 300px;
+        height: auto;
+        margin-left: 40px;
+        position: relative;
+    }
+
+    #pricing {
+        border-bottom: 1px solid hsl(223, 50%, 87%);
+    }
+
+    #price-dts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:30px;
+        padding: 50px 40px;
+    }
+
+    #price-dts h1:first-of-type {
+        font-size: 15px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: hsl(225, 20%, 60%) ;
+    }
+
+    #price-dts h1:last-child {
+        margin-top: -15px;
+        font-size: 15px;
+
+        position: absolute;
+        top: 165px;
+    }
+
+
+    #planDuration {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    #planDuration p {
+        font-size: 10px;
+    }
+
+    #planDuration p:last-of-type {
+        width: 87px;
+        height: auto;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: fade;
+    }
+
+    #discount {
+        padding: 3px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #btn {
+        margin-top: 30px;
+    }
+
+}
